@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/27/2021 14:25:40" ReportInfo.Modified="03/08/2021 15:30:31" ReportInfo.CreatorVersion="2019.3.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperWidth="350" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1247.4" Height="56.7">
+      <TextObject Name="Text1" Left="406.35" Top="9.45" Width="378" Height="22.68" Text="电   务   段   工   作   量" HorzAlign="Center" VertAlign="Center" Font="黑体, 12pt" FirstTabOffset="37.8"/>
+      <TextObject Name="Text41" Left="9.45" Top="37.8" Width="103.95" Height="18.9" Font="宋体, 9pt"/>
+      <TextObject Name="Text42" Left="207.9" Top="37.8" Width="122.85" Height="18.9" Font="宋体, 9pt"/>
+      <TextObject Name="Text43" Left="859.95" Top="37.8" Width="378" Height="18.9" HorzAlign="Right" Font="宋体, 9pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="60.7" Width="1247.4" Height="18.9">
+      <TextObject Name="Text2" Left="9.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text3" Left="103.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text4" Left="198.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text5" Left="292.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text6" Left="387.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text7" Left="481.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text8" Left="576.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text9" Left="670.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text10" Left="765.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text11" Left="859.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text12" Left="954.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text13" Left="1048.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text14" Left="1143.45" Width="94.5" Height="18.9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Dwd" Top="83.6" Width="1247.4" Height="18.9">
+      <TextObject Name="Text15" Left="9.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.dwdmc]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text16" Left="103.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_01]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text17" Left="198.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_02]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text18" Left="292.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_03]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text19" Left="387.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_04]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text20" Left="481.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_05]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text21" Left="576.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_06]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text22" Left="670.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_07]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text23" Left="765.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_08]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text24" Left="859.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_09]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text25" Left="954.45" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_10]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text26" Left="1048.95" Width="94.5" Height="18.9" Border.Lines="Left, Top" Text="[Dwd.tgdgl_11]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text27" Left="1143.45" Width="94.5" Height="18.9" Border.Lines="Left, Right, Top" Text="[Dwd.tgdgl_12]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+    <DataBand Name="Dwds" Top="106.5" Width="1247.4" Height="18.9">
+      <TextObject Name="Text28" Left="9.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.dwdmc]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text29" Left="103.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_01]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text30" Left="198.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_02]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text31" Left="292.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_03]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text32" Left="387.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_04]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text33" Left="481.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_05]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text34" Left="576.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_06]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text35" Left="670.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_07]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text36" Left="765.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_08]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text37" Left="859.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_09]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text38" Left="954.45" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_10]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text39" Left="1048.95" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="[Dwds.tgdgl_11]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text40" Left="1143.45" Width="94.5" Height="18.9" Border.Lines="All" Text="[Dwds.tgdgl_12]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

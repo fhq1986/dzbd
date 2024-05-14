@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="01/18/2021 10:05:27" ReportInfo.Modified="01/18/2021 14:56:00" ReportInfo.CreatorVersion="2019.3.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <DataBand Name="Data1" Top="83.6" Width="718.2" Height="56.7">
+      <TableObject Name="Table1" Left="9.45" Top="9.45" Width="321.3" Height="37.8">
+        <TableColumn Name="Column1" Width="47.25"/>
+        <TableColumn Name="Column2" Width="75.6"/>
+        <TableColumn Name="Column3"/>
+        <TableColumn Name="Column4"/>
+        <TableColumn Name="Column5"/>
+        <TableRow Name="Row1" Height="37.8">
+          <TableCell Name="Cell1" Text="[gddnhfx.sbmc]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell2" Text="[gddnhfx.gddmc]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell3" Text="[gddnhfx.tgdgl]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell4" Font="宋体, 9pt"/>
+          <TableCell Name="Cell5" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <DataHeaderBand Name="DataHeader1" Top="41.8" Width="718.2" Height="37.8">
+        <TextObject Name="Text1" Left="9.45" Top="9.45" Width="122.85" Height="18.9" Border.Lines="All" Font="宋体, 9pt"/>
+        <TextObject Name="Text2" Left="132.3" Top="9.45" Width="66.15" Height="18.9" Border.Lines="Right, Top, Bottom" Text="2020_1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        <TextObject Name="Text3" Left="198.45" Top="9.45" Width="94.5" Height="18.9" Border.Lines="Right, Top, Bottom" Text="2020_2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      </DataHeaderBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="144.3" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

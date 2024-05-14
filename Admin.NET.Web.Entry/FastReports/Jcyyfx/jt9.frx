@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="03/25/2021 09:24:01" ReportInfo.Modified="03/26/2021 21:14:12" ReportInfo.CreatorVersion="2019.3.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperWidth="300" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1058.4" Height="113.4">
+      <TextObject Name="Text1" Left="160.65" Top="9.45" Width="859.95" Height="22.68" Text="配   属   机   车   检   修   统   计" HorzAlign="Center" Font="黑体, 12pt, style=Bold"/>
+      <TextObject Name="Text27" Left="160.65" Top="85.05" Width="302.4" Height="28.35" VertAlign="Bottom" Font="宋体, 10.5pt, style=Bold"/>
+      <TextObject Name="Text28" Left="160.65" Top="37.8" Width="859.95" Height="18.9" HorzAlign="Center" VertAlign="Center" Font="宋体, 10.5pt, style=Bold"/>
+      <TextObject Name="Text56" Left="746.55" Top="85.05" Width="274.05" Height="28.35" HorzAlign="Right" VertAlign="Bottom" Font="宋体, 10.5pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="117.4" Width="1058.4" Height="56.7">
+      <TextObject Name="Text2" Left="160.65" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Text="承修段" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text3" Left="255.15" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Text="运输种别" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text4" Left="349.65" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text5" Left="444.15" Width="94.5" Height="37.8" Border.Lines="Left, Top, Bottom" Text="配属段" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text12" Left="538.65" Width="141.75" Height="37.8" Border.Lines="Left, Top, Bottom" Text="修理开始时分" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text13" Left="680.4" Width="141.75" Height="37.8" Border.Lines="Left, Top, Bottom" Text="修理终了时分" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text15" Left="822.15" Width="103.95" Height="37.8" Border.Lines="Left, Top, Bottom" Text="修理项目" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text16" Left="926.1" Width="94.5" Height="37.8" Border.Lines="All" Text="修理时间" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text6" Left="160.65" Top="37.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text22" Left="255.15" Top="37.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text23" Left="349.65" Top="37.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="3" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text24" Left="444.15" Top="37.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="4" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text31" Left="822.15" Top="37.8" Width="103.95" Height="18.9" Border.Lines="Left, Bottom" Text="7" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text32" Left="926.1" Top="37.8" Width="94.5" Height="18.9" Border.Lines="Left, Right, Bottom" Text="8" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text34" Left="680.4" Top="37.8" Width="141.75" Height="18.9" Border.Lines="Left, Bottom" Text="6" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text36" Left="538.65" Top="37.8" Width="141.75" Height="18.9" Border.Lines="Left, Bottom" Text="5" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="178.1" Width="1058.4" Height="26.46">
+      <TextObject Name="Text39" Left="160.65" Width="94.5" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.cxd]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text40" Left="255.15" Width="94.5" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.yszb]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text41" Left="349.65" Width="94.5" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.jx]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text42" Left="444.15" Width="94.5" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.psd]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text47" Left="538.65" Width="141.75" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.xlkssj]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text49" Left="680.4" Width="141.75" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.xlzlsj]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text52" Left="822.15" Width="103.95" Height="26.46" Border.Lines="Left, Bottom" Text="[qry.xlxm]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text53" Left="926.1" Width="94.5" Height="26.46" Border.Lines="Left, Right, Bottom" Text="[qry.xlsj]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/24/2017 16:20:00" ReportInfo.Modified="11/06/2017 15:35:37" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="297" PaperHeight="210" RawPaperSize="9">
+    <ReportTitleBand Name="ReportTitle1" Width="1047.06" Height="60.48">
+      <TextObject Name="Text1" Width="749.2" Height="35.91" Text="交路能耗查询结果" HorzAlign="Center" VertAlign="Center" Font="黑体, 18pt"/>
+      <TextObject Name="txtDw" Left="18.9" Top="37.8" Width="179.55" Height="18.9" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtRq" Left="415.8" Top="37.8" Width="330.75" Height="18.9" HorzAlign="Right" Font="宋体, 12pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="64.48" Width="1047.06" Height="42.53">
+      <TableObject Name="Table1" Width="749.38" Height="42.53" Border.Lines="All">
+        <TableColumn Name="Column1" Width="141.73"/>
+        <TableColumn Name="Column2" Width="112.73"/>
+        <TableColumn Name="Column3" Width="123.47"/>
+        <TableColumn Name="Column4" Width="123.47"/>
+        <TableColumn Name="Column5" Width="123.99"/>
+        <TableColumn Name="Column6" Width="123.99"/>
+        <TableRow Name="Row1" Height="42.53">
+          <TableCell Name="Cell1" Border.Lines="All" Text="交路" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="能源用量" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="能源标准" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="万吨公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="千机小时单耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 11pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="0">
+          <TableCell Name="Cell6" Border.Lines="All" Text="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell7" Border.Lines="Right" Text="2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell8" Border.Lines="Right" Text="3" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell9" Border.Lines="Right" Text="4" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell10" Border.Lines="Right" Text="5" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell40" Border.Lines="Right" Text="6" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <DataBand Name="DataAll" Top="111.01" Width="1047.06" Height="37.8">
+      <TableObject Name="Table2" Width="749.38" Height="37.8" Border.Lines="All">
+        <TableColumn Name="Column20" Width="141.73"/>
+        <TableColumn Name="Column21" Width="112.73"/>
+        <TableColumn Name="Column22" Width="123.47"/>
+        <TableColumn Name="Column23" Width="123.47"/>
+        <TableColumn Name="Column24" Width="123.99"/>
+        <TableColumn Name="Column25" Width="123.99"/>
+        <TableRow Name="Row3" Height="37.8">
+          <TableCell Name="Cell54" Border.Lines="All" Text="[qry.jl]" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell55" Border.Lines="All" Text="[qry.nryl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell56" Border.Lines="All" Text="[qry.nrbz]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell57" Border.Lines="All" Text="[qry.jn]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell58" Border.Lines="All" Text="[qry.wdgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell59" Border.Lines="All" Text="[qry.qjxsdh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+  </ReportPage>
+</Report>

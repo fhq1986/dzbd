@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/11/2014 11:42:37" ReportInfo.Modified="03/12/2022 17:12:51" ReportInfo.CreatorVersion="2019.3.5.0">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+
+    private void Cell37_AfterData(object sender, EventArgs e)
+    {
+      TableCell celTmp = (TableCell)sender;
+      int iLen = Length(celTmp.Text);
+      int iSize = 11;
+      if (iLen &gt; 0) 
+      {
+        double fSize = celTmp.Width / iLen;        
+                
+        if (fSize &gt; 5.66929)
+          iSize = 8;           
+        else if (fSize &gt; 4.53543)
+          iSize = 7;           
+        else if (fSize &gt; 4.15748)
+          iSize = 6;           
+        else
+          iSize = 5; 
+        Font font = new Font(&quot;宋体&quot;, iSize);
+        celTmp.Font = font; 
+      }
+      
+    }
+  }
+}
+</ScriptText>
+  <Dictionary/>
+  <ReportPage Name="Page1" PaperWidth="296.9" PaperHeight="420.1" RawPaperSize="8" LeftMargin="20" TopMargin="25" RightMargin="20" BottomMargin="15" FirstPageSource="1" OtherPagesSource="1" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="971.08" Height="141.75">
+      <TextObject Name="Text2" Width="948.78" Height="28.35" Text="[bbmc]" HorzAlign="Center" Font="宋体, 16pt, style=Bold"/>
+      <TextObject Name="Text13" Left="703.08" Top="22.68" Width="94.5" Height="18.9" Text="表号：" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text3" Left="807.03" Top="22.68" Width="141.75" Height="18.9" Text="[bh]" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text4" Left="703.08" Top="41.58" Width="94.5" Height="18.9" Text="制表单位:" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text5" Left="807.03" Top="41.58" Width="141.75" Height="18.9" Text="铁道部统计中心" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text6" Left="703.08" Top="60.48" Width="94.5" Height="18.9" Text="批准单位:" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text7" Left="807.03" Top="60.48" Width="141.75" Height="18.9" Text="铁道部" VertAlign="Center" Font="宋体, 10pt"/>
+      <TextObject Name="Text8" Left="703.08" Top="79.38" Width="94.5" Height="18.9" Text="批准文号:" Font="宋体, 10pt"/>
+      <TextObject Name="Text9" Left="807.03" Top="79.38" Width="141.75" Height="18.9" Text="铁统计[2009] 223号" Font="宋体, 10pt"/>
+      <TextObject Name="Text10" Left="703.08" Top="98.28" Width="94.5" Height="18.9" Text="统一编号:" Font="宋体, 10pt"/>
+      <TextObject Name="Text11" Left="807.03" Top="98.28" Width="141.75" Height="18.9" Text="[tybh]" Font="宋体, 10pt"/>
+      <TextObject Name="Text12" Left="703.08" Top="122.85" Width="245.7" Height="18.9" Text="[bdrq]" Font="宋体, 10pt"/>
+      <TextObject Name="Text14" Left="26.46" Top="122.85" Width="1188.88" Height="18.9" Text="[ddm]" Font="宋体, 10pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="143.35" Width="971.08" Height="68.04">
+      <TableObject Name="Table1" Width="971.46" Height="68.04" Border.Lines="All">
+        <TableColumn Name="Column1" Width="136.08"/>
+        <TableColumn Name="Column2" Width="132.3"/>
+        <TableColumn Name="Column3" Width="241.92"/>
+        <TableColumn Name="Column4" Width="117.18"/>
+        <TableColumn Name="Column5" Width="109.62"/>
+        <TableColumn Name="Column6" Width="102.06"/>
+        <TableColumn Name="Column7" Width="132.3"/>
+        <TableRow Name="Row1" Height="37.8">
+          <TableCell Name="Cell1" Border.Lines="All" Text="日    期" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="机车交路代码" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="机车交路名称&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="跨局或管内交路" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="机车配属段" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell27" Border.Lines="All" Text="台次数" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="30.24">
+          <TableCell Name="Cell6" Border.Lines="All" Text="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell7" Border.Lines="All" Text="2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell8" Border.Lines="All" Text="3" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell9" Border.Lines="All" Text="4" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell10" Border.Lines="All" Text="5" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell28" Border.Lines="All" Text="6" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell29" Border.Lines="All" Text="7" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <DataBand Name="DataAll" Top="212.99" Width="971.08" Height="22.68">
+      <TableObject Name="Table2" Width="971.46" Height="22.68" Border.Lines="All">
+        <TableColumn Name="Column8" Width="136.08"/>
+        <TableColumn Name="Column9" Width="132.3"/>
+        <TableColumn Name="Column10" Width="241.92"/>
+        <TableColumn Name="Column11" Width="117.18"/>
+        <TableColumn Name="Column12" Width="109.62"/>
+        <TableColumn Name="Column13" Width="102.06"/>
+        <TableColumn Name="Column14" Width="132.3"/>
+        <TableRow Name="Row4" Height="22.68">
+          <TableCell Name="Cell37" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.xtrq]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell38" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.jldm]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell39" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.jlmc]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell40" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.kjgn]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell41" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.jcxh]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell42" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.psd]" Padding="0, 1, 0, 1" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell43" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14.dbtr]" Padding="0, 1, 0, 1" HideZeros="true" Format="Number" Format.UseLocale="false" Format.DecimalDigits="1" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <DataBand Name="DataHj" Top="237.27" Width="971.08" Height="22.68">
+      <TableObject Name="Table3" Width="971.46" Height="22.68" Border.Lines="All">
+        <TableColumn Name="Column15" Width="136.08"/>
+        <TableColumn Name="Column16" Width="132.3"/>
+        <TableColumn Name="Column17" Width="241.92"/>
+        <TableColumn Name="Column18" Width="117.18"/>
+        <TableColumn Name="Column19" Width="109.62"/>
+        <TableColumn Name="Column20" Width="102.06"/>
+        <TableColumn Name="Column21" Width="132.3"/>
+        <TableRow Name="Row5" Height="22.68">
+          <TableCell Name="Cell44" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="合           计" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt" ColSpan="6"/>
+          <TableCell Name="Cell45" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell46" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell47" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell48" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell49" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell50" Border.Lines="All" AfterDataEvent="Cell37_AfterData" Text="[dat_jb14_hj.dbtr]" Padding="0, 1, 0, 1" HideZeros="true" Format="Number" Format.UseLocale="false" Format.DecimalDigits="1" Format.DecimalSeparator="." Format.GroupSeparator="" Format.NegativePattern="1" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="261.55" Width="971.08" Height="22.68">
+      <TextObject Name="Text15" Left="748.44" Top="3.78" Width="189" Height="18.9" Text="第[Page#]页 / 共[TotalPages#]页" Font="宋体, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

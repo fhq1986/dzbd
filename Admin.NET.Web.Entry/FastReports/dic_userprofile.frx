@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/28/2020 13:42:25" ReportInfo.Modified="02/28/2020 15:06:30" ReportInfo.CreatorVersion="2019.3.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="41.8" Width="718.2" Height="28.35"/>
+    <DataBand Name="user" Top="74.15" Width="718.2" Height="18.9">
+      <TableObject Name="Table1" Width="330.75" Height="18.9">
+        <TableColumn Name="Column1"/>
+        <TableColumn Name="Column2"/>
+        <TableColumn Name="Column3"/>
+        <TableColumn Name="Column4"/>
+        <TableColumn Name="Column5"/>
+        <TableRow Name="Row1">
+          <TableCell Name="Cell1" Border.Lines="All" Text="[dic_xtzh.Id]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="[dic_xtzh.UserName]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="[dic_xtzh.DisplayName]" Font="宋体, 9pt"/>
+          <TableCell Name="Cell4" Border.Lines="All" Font="宋体, 9pt"/>
+          <TableCell Name="Cell5" Border.Lines="All" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="97.05" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>

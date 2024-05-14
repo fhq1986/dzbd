@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/10/2014 09:09:39" ReportInfo.Modified="12/15/2017 11:52:03" ReportInfo.CreatorVersion="2013.2.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="420.1" PaperHeight="296.9" RawPaperSize="8" LeftMargin="45" RightMargin="45" BottomMargin="13" FirstPageSource="1" OtherPagesSource="1" Guides="1.14,1248.54,976.68,1245.01,977.41,1223.11,38.2,318.64,0,1247.4,226.8,340.2,453.6,567,793.8,113.4,1020.6,680.4,907.2,1134,37.8,151.2,75.6">
+    <ReportTitleBand Name="ReportTitle1" Width="1247.78" Height="109.97" Guides="0.38,29.48,52.17,147.77,147.8,170.48,29.49">
+      <TextObject Name="Text1" Left="1.14" Top="0.38" Width="1247.4" Height="29.1" Text="机/动　车　能　源　消　耗　报　表" HorzAlign="Center" VertAlign="Center" Font="黑体, 18pt, style=Bold"/>
+      <TextObject Name="Text2" Left="976.68" Top="52.17" Width="268.33" Height="27.56" Text="表　　号：机报－4&#13;&#10;" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtRq" Left="977.41" Top="87.29" Width="245.7" Height="22.68" HorzAlign="Right" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtDw" Left="38.2" Top="87.29" Width="415.4" Height="22.68" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtJclx" Left="1.14" Top="29.49" Width="1247.4" Height="22.68" HorzAlign="Center" VertAlign="Center" Font="宋体, 12pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="113.97" Width="1247.78" Height="189" Guides="0,189,158.76,64.26,94.5">
+      <TableObject Name="Table1" Width="1247.4" Height="189" Border.Lines="All">
+        <TableColumn Name="Column1" Width="226.8"/>
+        <TableColumn Name="Column2" Width="113.4"/>
+        <TableColumn Name="Column3" Width="113.4"/>
+        <TableColumn Name="Column4" Width="113.4"/>
+        <TableColumn Name="Column5" Width="113.4"/>
+        <TableColumn Name="Column6" Width="113.4"/>
+        <TableColumn Name="Column7" Width="113.4"/>
+        <TableColumn Name="Column8" Width="113.4"/>
+        <TableColumn Name="Column9" Width="113.4"/>
+        <TableColumn Name="Column10" Width="113.4"/>
+        <TableRow Name="Row1" Height="64.26">
+          <TableCell Name="Cell1" Border.Lines="All" Text="　　　　　　　　    &#13;&#10;&#13;&#10;&#13;&#10;　　　　　　　　项　　目&#13;&#10;&#13;&#10;&#13;&#10;&#13;　　　运输种别&#13;&#10;" Font="宋体, 12pt" RowSpan="2"/>
+          <TableCell Name="Cell2" Border.Lines="All" Text="通过&#13;&#10;总重&#13;&#10;吨公&#13;&#10;里&#13;&#10;(千)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="2"/>
+          <TableCell Name="Cell3" Border.Lines="All" Text="牵引&#13;&#10;总重&#13;&#10;吨公&#13;&#10;里&#13;&#10;(千)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="2"/>
+          <TableCell Name="Cell4" Border.Lines="All" Text="调车&#13;&#10;及&#13;&#10;其他&#13;&#10;工作&#13;&#10;时间&#13;&#10;(小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="2"/>
+          <TableCell Name="Cell5" Border.Lines="All" Text="燃料消耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell16" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell17" Border.Lines="All" Text="通过总重万吨公里&#13;&#10;(调车小时)&#13;&#10;燃料消耗&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell18" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell19" Border.Lines="All" Text="牵引总重万吨公里&#13;&#10;(调车小时)&#13;&#10;燃料消耗&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell20" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row2" Height="94.5">
+          <TableCell Name="Cell6" Border.Lines="All" Font="宋体, 9pt"/>
+          <TableCell Name="Cell7" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell8" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell9" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell10" Border.Lines="All" Text="实际&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell21" Border.Lines="All" Text="标准&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell22" Border.Lines="All" Text="实际&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell23" Border.Lines="All" Text="标准&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell24" Border.Lines="All" Text="实际&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell25" Border.Lines="All" Text="标准&#13;&#10;油(千克)&#13;&#10;电(千瓦&#13;&#10;小时)&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row3" Height="30.24">
+          <TableCell Name="Cell11" Border.Lines="All" Text="甲" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell13" Border.Lines="All" Text="2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell14" Border.Lines="All" Text="3" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell15" Border.Lines="All" Text="4" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell26" Border.Lines="All" Text="5" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell27" Border.Lines="All" Text="6" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell28" Border.Lines="All" Text="7" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell29" Border.Lines="All" Text="8" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell30" Border.Lines="All" Text="9" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="306.97" Width="1247.78" Height="665.28" Guides="0,665.28,30.24,60.48,241.92,90.72,151.2,120.96,181.44,211.68,272.16,302.4,574.56,332.64,483.84,362.88,393.12,423.36,453.6,514.08,544.32,604.8,635.04">
+      <TableObject Name="Table2" Width="226.8" Height="665.28" Border.Lines="All">
+        <TableColumn Name="Column11" Width="37.8"/>
+        <TableColumn Name="Column12" Width="37.8"/>
+        <TableColumn Name="Column13" Width="151.2"/>
+        <TableRow Name="Row4" Height="30.24">
+          <TableCell Name="Cell31" Border.Lines="All" Text="　　　合　计" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell32" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell33" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row5" Height="30.24">
+          <TableCell Name="Cell36" Border.Lines="All" Text="　一、客运计" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell37" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell38" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row6" Height="30.24">
+          <TableCell Name="Cell41" Border.Lines="All" Text="其&#13;&#10;&#13;&#10;&#13;&#10;中&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="6"/>
+          <TableCell Name="Cell42" Border.Lines="All" Text="　客　运" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell43" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row7" Height="30.24">
+          <TableCell Name="Cell46" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell47" Border.Lines="All" Text="其&#13;&#10;中" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="2"/>
+          <TableCell Name="Cell48" Border.Lines="All" Text="　CRH动车组&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row8" Height="30.24">
+          <TableCell Name="Cell51" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell52" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell53" Border.Lines="All" Text="　补　机" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row9" Height="30.24">
+          <TableCell Name="Cell56" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell57" Border.Lines="All" Text="　路　　用" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell58" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row10" Height="30.24">
+          <TableCell Name="Cell61" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell62" Border.Lines="All" Text="　专用调车" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell63" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row11" Height="30.24">
+          <TableCell Name="Cell66" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell67" Border.Lines="All" Text="　其　　他&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell68" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row12" Height="30.24">
+          <TableCell Name="Cell71" Border.Lines="All" Text="　二、行包专运" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell72" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell73" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row13" Height="30.24">
+          <TableCell Name="Cell76" Border.Lines="All" Text="　三、货运计" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell77" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell78" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row14" Height="30.24">
+          <TableCell Name="Cell81" Border.Lines="All" Text="其&#13;&#10;&#13;&#10;&#13;&#10;中&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="9"/>
+          <TableCell Name="Cell82" Border.Lines="All" Text="　货　运" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell83" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row15" Height="30.24">
+          <TableCell Name="Cell86" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell87" Border.Lines="All" Text="其&#13;&#10;&#13;&#10;&#13;&#10;中&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" RowSpan="5"/>
+          <TableCell Name="Cell88" Border.Lines="All" Text="“五定”班列" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row16" Height="30.24">
+          <TableCell Name="Cell91" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell92" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell93" Border.Lines="All" Text="　小 运 转" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row17" Height="30.24">
+          <TableCell Name="Cell96" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell97" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell98" Border.Lines="All" Text="　单机挂车" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row18" Height="30.24">
+          <TableCell Name="Cell101" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell102" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell103" Border.Lines="All" Text="　重　　联" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row19" Height="30.24">
+          <TableCell Name="Cell106" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell107" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell108" Border.Lines="All" Text="　补　　机" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row20" Height="30.24">
+          <TableCell Name="Cell111" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell112" Border.Lines="All" Text="　路　　用" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell113" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row21" Height="30.24">
+          <TableCell Name="Cell116" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell117" Border.Lines="All" Text="　专用调车" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell118" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row22" Height="30.24">
+          <TableCell Name="Cell121" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell122" Border.Lines="All" Text="　其　　他" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="2"/>
+          <TableCell Name="Cell123" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row23" Height="30.24">
+          <TableCell Name="Cell126" Border.Lines="All" Text="　四、客运列车供电&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell127" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell128" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row24" Height="30.24">
+          <TableCell Name="Cell131" Border.Lines="All" Text="五、客运再生电&#13;&#10;" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell132" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell133" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+        <TableRow Name="Row25" Height="30.24">
+          <TableCell Name="Cell136" Border.Lines="All" Text="　六、货运再生电" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt" ColSpan="3"/>
+          <TableCell Name="Cell137" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell138" Border.Lines="All" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <SubreportObject Name="Subreport1" Left="226.8" Width="1020.6" Height="665.28" ReportPage="Page2"/>
+    </DataBand>
+  </ReportPage>
+  <ReportPage Name="Page2" PaperWidth="270" PaperHeight="8" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" FirstPageSource="1" OtherPagesSource="1" Guides="0,1020.6,113.4,226.8,340.2,453.6,567,680.4,793.8,907.2">
+    <DataBand Name="DataAll" Width="1020.6" Height="30.24" Guides="0,30.24">
+      <TableObject Name="Table3" Width="1020.6" Height="30.24" Border.Lines="All">
+        <TableColumn Name="Column14" Width="113.4"/>
+        <TableColumn Name="Column15" Width="113.4"/>
+        <TableColumn Name="Column16" Width="113.4"/>
+        <TableColumn Name="Column17" Width="113.4"/>
+        <TableColumn Name="Column18" Width="113.4"/>
+        <TableColumn Name="Column19" Width="113.4"/>
+        <TableColumn Name="Column20" Width="113.4"/>
+        <TableColumn Name="Column21" Width="113.4"/>
+        <TableColumn Name="Column22" Width="113.4"/>
+        <TableRow Name="Row26" Height="30.24">
+          <TableCell Name="Cell139" Border.Lines="All" Text="[qry.tgdgl]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell140" Border.Lines="All" Text="[qry.zzdgl]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell141" Border.Lines="All" Text="[qry.dcsj]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell142" Border.Lines="All" Text="[qry.hsxh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell143" Border.Lines="All" Text="[qry.bzxh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell144" Border.Lines="All" Text="[qry.tghsdh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell145" Border.Lines="All" Text="[qry.tgbzdh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell146" Border.Lines="All" Text="[qry.hsdh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          <TableCell Name="Cell147" Border.Lines="All" Text="[qry.bzdh]" Padding="0, 1, 0, 1" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </DataBand>
+  </ReportPage>
+</Report>

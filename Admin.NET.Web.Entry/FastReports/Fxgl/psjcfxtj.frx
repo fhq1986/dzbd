@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/11/2020 10:59:07" ReportInfo.Modified="07/06/2021 10:02:21" ReportInfo.CreatorVersion="2019.3.5.0">
+  <Dictionary/>
+  <ReportPage Name="Page1" Landscape="true" PaperWidth="330" PaperHeight="210" RawPaperSize="9" FirstPageSource="15" OtherPagesSource="15" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1171.8" Height="98.28">
+      <TextObject Name="Text1" Width="1050" Height="29.1" Text="配   属   机   车   分   线   路   别   统   计" HorzAlign="Center" VertAlign="Center" Font="黑体, 18pt, style=Bold"/>
+      <TextObject Name="txtBblb" Left="245.7" Top="75.6" Width="91.44" Height="22.68" VertAlign="Bottom" Font="黑体, 9pt"/>
+      <TextObject Name="txtRq" Left="909.2" Top="75.6" Width="245.7" Height="22.68" HorzAlign="Right" VertAlign="Bottom" Font="黑体, 9pt"/>
+      <TextObject Name="txtJczl" Left="406.35" Top="75.6" Width="113.4" Height="22.68" VertAlign="Bottom" Font="黑体, 9pt"/>
+      <TextObject Name="TxtYszb" Left="614.25" Top="75.6" Width="113.4" Height="22.68" VertAlign="Bottom" Font="黑体, 9pt"/>
+      <TextObject Name="TxtDw" Top="75.6" Width="217.35" Height="22.68" VertAlign="Bottom" Font="黑体, 9pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="102.28" Width="1171.8" Height="18.9">
+      <TextObject Name="Text2" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="配属段代码" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text15" Left="75.6" Width="56.7" Height="18.9" Border.Lines="Left, Top, Bottom" Text="线路代码" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text16" Left="132.3" Width="113.4" Height="18.9" Border.Lines="Left, Top, Bottom" Text="线路名称" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text17" Left="245.7" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text18" Left="321.3" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="牵引总重吨公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text19" Left="415.8" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="通过总重吨公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text20" Left="510.3" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="总走行公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text21" Left="604.8" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="沿线走行公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text22" Left="699.3" Width="94.5" Height="18.9" Border.Lines="Left, Top, Bottom" Text="车辆公里" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text23" Left="793.8" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="调车小时" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text24" Left="869.4" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="标准能耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text25" Left="945" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="实际能耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text27" Left="1096.2" Width="75.6" Height="18.9" Border.Lines="All" Text="实际单耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text26" Left="1020.6" Width="75.6" Height="18.9" Border.Lines="Left, Top, Bottom" Text="标准单耗" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </PageHeaderBand>
+    <DataBand Name="psjcfxtj" Top="125.18" Width="1171.8" Height="18.9">
+      <TextObject Name="Text3" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Psddm]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text28" Left="75.6" Width="56.7" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Xldm]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text29" Left="132.3" Width="113.4" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Xlmc]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text30" Left="245.7" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Jx]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text31" Left="321.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Qyzzdgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text32" Left="415.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Tgzzdgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text33" Left="510.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Zzxgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text34" Left="604.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Yxzxgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text35" Left="699.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Clgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text36" Left="793.8" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Dcsj]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text37" Left="869.4" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Bznh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text38" Left="1020.6" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Bzdh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text39" Left="945" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtj.Sjnh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text40" Left="1096.2" Width="75.6" Height="18.9" Border.Lines="Left, Right, Bottom" Text="[psjcfxtj.Sjdh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+    <DataBand Name="psjcfxtjs" Top="148.08" Width="1171.8" Height="18.9">
+      <TextObject Name="Text41" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="路局合计" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text42" Left="75.6" Width="56.7" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Xldm]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text43" Left="132.3" Width="113.4" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Xlmc]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text44" Left="245.7" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Jx]" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text45" Left="321.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Qyzzdgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text46" Left="415.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Tgzzdgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text47" Left="510.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Zzxgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text48" Left="604.8" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Yxzxgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text49" Left="699.3" Width="94.5" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Clgl]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text50" Left="793.8" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Dcsj]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text51" Left="869.4" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Bznh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text52" Left="1020.6" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Bzdh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text53" Left="945" Width="75.6" Height="18.9" Border.Lines="Left, Bottom" Text="[psjcfxtjs.Sjnh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+      <TextObject Name="Text54" Left="1096.2" Width="75.6" Height="18.9" Border.Lines="Left, Right, Bottom" Text="[psjcfxtjs.Sjdh]" HorzAlign="Right" VertAlign="Center" Font="宋体, 9pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="170.98" Width="1171.8" Height="18.9">
+      <TextObject Name="Text14" Left="453.6" Width="206.01" Height="18.9" Text="第[Page#]页 / 共[TotalPages#]页" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

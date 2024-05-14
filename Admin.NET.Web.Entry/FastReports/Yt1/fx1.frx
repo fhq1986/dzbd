@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/10/2014 10:50:32" ReportInfo.Modified="08/24/2022 15:08:33" ReportInfo.CreatorVersion="2019.3.5.0">
+  <ScriptText>
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Windows.Forms;
+    using System.Drawing;
+    using System.Data;
+    using FastReport;
+    using FastReport.Data;
+    using FastReport.Dialog;
+    using FastReport.Barcode;
+    using FastReport.Table;
+    using FastReport.Utils;
+
+    namespace FastReport
+    {
+    public class ReportScript
+    {
+
+    private void Cell53_AfterData(object sender, EventArgs e)
+    {
+    TableCell celTmp = (TableCell)sender;
+    int iLen = Length(celTmp.Text);
+    int iSize = 11;
+    if (iLen &gt; 0)
+    {
+    double fSize = celTmp.Width / iLen;
+
+    if (fSize &gt; 5.66929)
+    iSize = 8;
+    else if (fSize &gt; 4.53543)
+    iSize = 7;
+    else if (fSize &gt; 4.15748)
+    iSize = 6;
+    else
+    iSize = 5;
+    Font font = new Font(&quot;宋体&quot;, iSize);
+    celTmp.Font = font;
+    }
+    }
+    }
+    }
+  </ScriptText>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlq+rW0RkboK+/8CKGGYUID3ctBV8q9SvKYxl3iiE7vBnh7Tgou0+4WFf3NfmPSvHVFocBdz20BZr87eUDCYs+irCQezYuEv2UQa5Exez3hHthQYcQ7SbEur9kY7ZQtNZauZpBLBchDermXqx72NUp7UjsQ670xDFsT4HYIvd4JfPw/CRDdaaf6OaX/oDXVLDFL">
+      <TableDataSource Name="aaa" DataType="System.Int32" Enabled="true" TableName="aaa">
+        <Column Name="id" DataType="System.Double"/>
+        <Column Name="zmmc" DataType="System.String"/>
+        <Column Name="zmbm" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="310" PaperHeight="420.1" LeftMargin="20" TopMargin="20" RightMargin="20" BottomMargin="25" FirstPageSource="15" OtherPagesSource="15" Guides="1085.99,1062.19,1088.44,0,1075.41,1088.14,0,0,878.85,878.85,538.65,878.85,1020.6,0,0,0,0,0,0,0,0,0,0,0,0,0,0" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1020.6" Height="51.81" Guides="0.03,29.13,86.56,109.24,85.84,108.52,0,0">
+      <TextObject Name="Text16" Top="0.03" Width="1020.6" Height="29.1" Text="机车乘务员退勤台账" HorzAlign="Center" VertAlign="Center" Font="黑体, 18pt, style=Bold"/>
+      <TextObject Name="txtRq" Left="538.65" Top="29.13" Width="481.95" Height="22.68" HorzAlign="Right" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtJclx" Top="29.13" Width="538.65" Height="22.68" VertAlign="Center" Font="宋体, 12pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="55.1" Width="1020.6" Height="22.68" Guides="0,22.68">
+      <TableObject Name="Table1" Width="1020.6" Height="22.68">
+        <TableColumn Name="Column1" Width="34.44"/>
+        <TableColumn Name="Column67" Width="68.46"/>
+        <TableColumn Name="Column201" Width="66.57"/>
+        <TableColumn Name="Column202" Width="43.89"/>
+        <TableColumn Name="Column203" Width="77.91"/>
+        <TableColumn Name="Column204" Width="76.02"/>
+        <TableColumn Name="Column205" Width="68.46"/>
+        <TableColumn Name="Column1" Width="53.34"/>
+        <TableColumn Name="Column67" Width="50.19"/>
+        <TableColumn Name="Column201" Width="53.34"/>
+        <TableColumn Name="Column202" Width="49.56"/>
+        <TableColumn Name="Column203" Width="79.8"/>
+        <TableColumn Name="Column204" Width="79.8"/>
+        <TableColumn Name="Column205" Width="77.07"/>
+        <TableColumn Name="Column204" Width="73.29"/>
+        <TableColumn Name="Column205" Width="68.46"/>
+        <TableRow Name="Row3" Height="22.68">
+          <TableCell Name="Cell11" Border.Lines="All" Text="序号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="日期" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="值班员" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="状态" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="运用车间" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="机型机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="报单日期" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="工号1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="姓名1" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="工号2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="姓名2" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="出勤时分" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="接车时分" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="退勤时分" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="出发站" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell11" Border.Lines="All" Text="到达站" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="81.06" Width="1020.6" Condition="[qry.XH]">
+      <DataBand Name="DataAll" Top="84.35" Width="1020.6" Height="18.9" Guides="0,18.9">
+        <TableObject Name="Table2" Width="1020.6" Height="18.9">
+          <TableColumn Name="Column15" Width="34.44"/>
+          <TableColumn Name="Column68" Width="68.46"/>
+          <TableColumn Name="Column16" Width="66.57"/>
+          <TableColumn Name="Column151" Width="43.89"/>
+          <TableColumn Name="Column681" Width="77.91"/>
+          <TableColumn Name="Column161" Width="76.02"/>
+          <TableColumn Name="Column1511" Width="68.46"/>
+          <TableColumn Name="Column15" Width="53.34"/>
+          <TableColumn Name="Column68" Width="50.19"/>
+          <TableColumn Name="Column16" Width="53.34"/>
+          <TableColumn Name="Column151" Width="49.56"/>
+          <TableColumn Name="Column681" Width="79.8"/>
+          <TableColumn Name="Column161" Width="79.8"/>
+          <TableColumn Name="Column1511" Width="77.07"/>
+          <TableColumn Name="Column161" Width="73.29"/>
+          <TableColumn Name="Column1511" Width="68.46"/>
+          <TableRow Name="Row4">
+            <TableCell Name="Cell138" Border.Lines="All" Text="[qry.XH]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+            <TableCell Name="Cell541" Border.Lines="All" Text="[qry.SHSJTXT]" Padding="0, 0, 2, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell503" Border.Lines="All" Text="[qry.DISPLAYNAME]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell513" Border.Lines="All" Text="[qry.SHZT]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell523" Border.Lines="All" Text="[qry.CJMC]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell1381" Border.Lines="All" Text="[qry.JCH]" Padding="0, 0, 0, 0" VertAlign="Center" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5401" Border.Lines="All" Text="[qry.BDRQ]" Padding="0, 0, 2, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell54" Border.Lines="All" Text="[qry.SJDM1]" Padding="0, 0, 2, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell531" Border.Lines="All" Text="[qry.SJXM1]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell540" Border.Lines="All" Text="[qry.FSJDM1]" Padding="0, 0, 2, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.FSJXM1]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.CQ]" Padding="2, 0, 0, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.JIEC]" Padding="2, 0, 0, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.TQ]" Padding="2, 0, 0, 0" HideZeros="true" HorzAlign="Center" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.SFCZMC]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell5311" Border.Lines="All" Text="[qry.ZDCZMC]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="106.53" Width="1020.6"/>
+    </GroupHeaderBand>
+    <PageFooterBand Name="PageFooter1" Top="109.82" Width="1020.6" Height="18.9" Guides="0,18.9">
+      <TextObject Name="Text14" Left="878.85" Width="141.75" Height="18.9" Text="第[Page#]页 / 共[TotalPages#]页" Font="宋体, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="07/10/2014 10:50:32" ReportInfo.Modified="02/04/2021 17:14:20" ReportInfo.CreatorVersion="2019.3.5.0">
+  <ScriptText>
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.ComponentModel;
+    using System.Windows.Forms;
+    using System.Drawing;
+    using System.Data;
+    using FastReport;
+    using FastReport.Data;
+    using FastReport.Dialog;
+    using FastReport.Barcode;
+    using FastReport.Table;
+    using FastReport.Utils;
+
+    namespace FastReport
+    {
+    public class ReportScript
+    {
+
+    private void Cell53_AfterData(object sender, EventArgs e)
+    {
+    TableCell celTmp = (TableCell)sender;
+    int iLen = Length(celTmp.Text);
+    int iSize = 11;
+    if (iLen &gt; 0)
+    {
+    double fSize = celTmp.Width / iLen;
+
+    if (fSize &gt; 5.66929)
+    iSize = 8;
+    else if (fSize &gt; 4.53543)
+    iSize = 7;
+    else if (fSize &gt; 4.15748)
+    iSize = 6;
+    else
+    iSize = 5;
+    Font font = new Font(&quot;宋体&quot;, iSize);
+    celTmp.Font = font;
+    }
+    }
+    }
+    }
+  </ScriptText>
+  <Dictionary>
+    <MsSqlDataConnection Name="Connection" ConnectionString="rijcmlq+rW0RkboK+/8CKGGYUID3ctBV8q9SvKYxl3iiE7vBnh7Tgou0+4WFf3NfmPSvHVFocBdz20BZr87eUDCYs+irCQezYuEv2UQa5Exez3hHthQYcQ7SbEur9kY7ZQtNZauZpBLBchDermXqx72NUp7UjsQ670xDFsT4HYIvd4JfPxvmHyjkKe5fQ5GSw9Bh9qK">
+      <TableDataSource Name="aaa" DataType="System.Int32" Enabled="true" TableName="aaa">
+        <Column Name="id" DataType="System.Double"/>
+        <Column Name="zmmc" DataType="System.String"/>
+        <Column Name="zmbm" DataType="System.String"/>
+      </TableDataSource>
+    </MsSqlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="330" PaperHeight="420.1" LeftMargin="20" TopMargin="20" RightMargin="20" BottomMargin="25" FirstPageSource="15" OtherPagesSource="15" Columns.Count="5" Columns.Width="58" Columns.Positions="0,58,116,174,232" Guides="0.43,1085.99,797.59,1062.19,37.49,315.63,1088.44,0,198.45,66.15,132.3,219.24,417.69,285.39,351.54,438.48,636.93,504.63,570.78,657.72,856.17,723.87,790.02,876.96,1075.41,943.11,1009.26,948.06,1088.14" Watermark.Font="宋体, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="1096.2" Height="109.24" Guides="0.03,29.13,86.56,109.24,85.84,108.52">
+      <TextObject Name="Text16" Left="0.43" Top="0.03" Width="1085.56" Height="29.1" Text="机 车 节 能 成 绩 统 计 表" HorzAlign="Center" VertAlign="Center" Font="黑体, 18pt, style=Bold"/>
+      <TextObject Name="txtRq" Left="797.59" Top="86.56" Width="264.6" Height="22.68" HorzAlign="Right" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtDw" Left="9.45" Top="86.56" Width="278.14" Height="22.68" VertAlign="Center" Font="宋体, 12pt"/>
+      <TextObject Name="txtJclx" Left="0.43" Top="85.84" Width="1088.01" Height="22.68" HorzAlign="Center" VertAlign="Center" Font="宋体, 12pt"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="113.24" Width="1096.2" Height="22.68" Guides="0,22.68">
+      <TableObject Name="Table1" Width="198.45" Height="22.68">
+        <TableColumn Name="Column1"/>
+        <TableColumn Name="Column67"/>
+        <TableColumn Name="Column2"/>
+        <TableRow Name="Row3" Height="22.68">
+          <TableCell Name="Cell11" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell137" Border.Lines="All" Text="机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell12" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table3" Left="219.24" Width="198.45" Height="22.68">
+        <TableColumn Name="Column69"/>
+        <TableColumn Name="Column70"/>
+        <TableColumn Name="Column71"/>
+        <TableRow Name="Row5" Height="22.68">
+          <TableCell Name="Cell139" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell140" Border.Lines="All" Text="机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell141" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table4" Left="438.48" Width="198.45" Height="22.68">
+        <TableColumn Name="Column72"/>
+        <TableColumn Name="Column73"/>
+        <TableColumn Name="Column74"/>
+        <TableRow Name="Row6" Height="22.68">
+          <TableCell Name="Cell142" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell143" Border.Lines="All" Text="机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell144" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table6" Left="657.72" Width="198.45" Height="22.68">
+        <TableColumn Name="Column78"/>
+        <TableColumn Name="Column79"/>
+        <TableColumn Name="Column80"/>
+        <TableRow Name="Row8" Height="22.68">
+          <TableCell Name="Cell148" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell149" Border.Lines="All" Text="机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell150" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+      <TableObject Name="Table7" Left="876.96" Width="198.45" Height="22.68">
+        <TableColumn Name="Column81"/>
+        <TableColumn Name="Column82"/>
+        <TableColumn Name="Column83"/>
+        <TableRow Name="Row9" Height="22.68">
+          <TableCell Name="Cell151" Border.Lines="All" Text="机型" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell152" Border.Lines="All" Text="机车号" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+          <TableCell Name="Cell153" Border.Lines="All" Text="节能" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+        </TableRow>
+      </TableObject>
+    </PageHeaderBand>
+    <GroupHeaderBand Name="GroupHeader1" Top="139.92" Width="219.24" Condition="[qry.Jx]">
+      <DataBand Name="DataAll" Top="143.92" Width="219.24" Height="18.9" Guides="0,18.9">
+        <TableObject Name="Table2" Width="198.45" Height="18.9">
+          <TableColumn Name="Column15"/>
+          <TableColumn Name="Column68"/>
+          <TableColumn Name="Column16"/>
+          <TableRow Name="Row4">
+            <TableCell Name="Cell53" Border.Lines="All" AfterDataEvent="Cell53_AfterData" Text="[qry.Jx]" Padding="2, 0, 0, 0" HideZeros="true" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+            <TableCell Name="Cell138" Border.Lines="All" Text="[qry.Jch]" Padding="0, 0, 0, 0" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt"/>
+            <TableCell Name="Cell54" Border.Lines="All" AfterDataEvent="Cell53_AfterData" Text="[qry.Jn]" Padding="0, 0, 2, 0" HideZeros="true" HorzAlign="Right" VertAlign="Center" WordWrap="false" Font="宋体, 9pt"/>
+          </TableRow>
+        </TableObject>
+      </DataBand>
+      <GroupFooterBand Name="GroupFooter1" Top="166.82" Width="219.24"/>
+    </GroupHeaderBand>
+    <PageFooterBand Name="PageFooter1" Top="170.82" Width="1096.2" Height="18.9" Guides="0,18.9">
+      <TextObject Name="Text14" Left="948.06" Width="140.08" Height="18.9" Text="第[Page#]页 / 共[TotalPages#]页" Font="宋体, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

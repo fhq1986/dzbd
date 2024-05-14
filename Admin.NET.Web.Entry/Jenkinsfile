@@ -1,0 +1,39 @@
+﻿pipeline{
+    agent any
+    stages{
+        stage('源代码下载'){
+            steps{
+              git credentialsId:'gitee1', url:'https://gitee.com/grey-space_0/adminnet.git'
+            }
+        }
+        stage('构建镜像'){
+         steps{
+           sh '''
+           cd ${WORKSPACE}
+           docker build -t registry.cn-shanghai.aliyuncs.com/sky_hub/fanghuaqing:adminnet .
+           '''
+          }
+        }
+        stage('推送到阿里云仓库'){
+         steps{
+           sh '''
+           docker login -u fhq19860722 -p fhq87976220 registry.cn-shanghai.aliyuncs.com
+           docker push registry.cn-shanghai.aliyuncs.com/sky_hub/fanghuaqing:adminnet
+           '''
+         }
+        }   
+        stage('部署'){
+          steps{
+           sh '''
+           docker rm testapi --force
+           docker run -d -p 5005:5005 -e ASPNETCORE_Kestrel__Certificates__Default__Password=crypticpassword -e ASPNETCORE_Kestrel__Certificates__Default__Path=./WebApplication1.pfx --name testapi registry.cn-shanghai.aliyuncs.com/sky_hub/fanghuaqing:adminnet
+           '''
+          }
+        }
+    }
+    post{
+        always{
+            mail to:'448941969@qq.com',subject:"Status of pipeline:${currentBuild.fullDisplayName}",body:"${env.BUILD_URL} has result ${currentBuild.result}"
+        }
+    }
+}
