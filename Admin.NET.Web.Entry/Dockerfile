@@ -14,6 +14,7 @@ COPY ["./Admin.NET/Admin.NET.Web.Core/Admin.NET.Web.Core.csproj", "Admin.NET.Web
 COPY ["./Admin.NET/Admin.NET.Application/Admin.NET.Application.csproj", "Admin.NET.Application/"]
 COPY ["./Admin.NET/Admin.NET.Application/Configuration/*.*", "Admin.NET.Application/Configuration/"]
 COPY ["./Admin.NET/Admin.NET.Core/Admin.NET.Core.csproj", "Admin.NET.Core/"]
+COPY ["./Admin.NET/DapperExtensions/DapperExtensions.csproj", "DapperExtensions/"]
 RUN dotnet restore "./Admin.NET.Web.Entry/./Admin.NET.Web.Entry.csproj"
 COPY . .
 WORKDIR "/src/Admin.NET.Web.Entry"
